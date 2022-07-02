@@ -1,0 +1,134 @@
+body {
+  font-family: "Radio Canada", sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #006ec5;
+  font-family: "Asap", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: left;
+  color: white;
+  font-family: "Radio Canada", sans-serif;
+}
+
+footer {
+  text-align: center;
+}
+
+.outsideBorder {
+  border-style: solid;
+  color: #5a6275;
+  padding: 25px;
+}
+
+.citySearch {
+  display: block;
+  font-weight: 700;
+}
+
+.btn btn-primary col-1 {
+  margin: 5px;
+}
+
+.btn btn-secondary col-1 {
+  margin: 5px;
+  color: #006ec5;
+}
+
+.innerBox {
+  background-image: url(src/bluehaze.jpg);
+  border-style: solid;
+  color: #5a6275;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+/* first list that will have to be interactive with weather changes*/
+
+.firstList {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  padding: 15px;
+  border-color: #5a6275;
+  list-style: none;
+}
+
+/* first list elements*/
+
+.rain-moon {
+  color: #5a6275;
+  font-size: 200px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.day-date {
+  color: #006ec5;
+  font-size: 20px;
+  font-family: "Radio Canada", sans-serif;
+  padding-top: 25px;
+}
+
+.temp {
+  color: #006ec5;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.tinyTemp {
+  color: #006ec5;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.degrees-f {
+  color: #006ec5;
+  font-weight: 300;
+  font-size: 30px;
+  padding: 0px;
+}
+
+.weather-facts {
+  list-style: none;
+  color: #006ec5;
+  font-family: "Radio Canada", sans-serif;
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+/* Second list elements*/
+
+.secondList {
+  background-color: white;
+  list-style: none;
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
+}
+
+.mon,
+.tues,
+.wed,
+.thurs,
+.fri,
+.sat,
+.sun {
+  text-align: center;
+  font-size: 30px;
+}
+
+.goodbye {
+  text-align: center;
+  font-size: 20px;
+  color: #006ec5;
+  font-family: "Radio Canada", sans-serif;
+}
