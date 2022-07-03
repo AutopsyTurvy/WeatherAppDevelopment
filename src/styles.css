@@ -43,7 +43,7 @@ footer {
 }
 
 .innerBox {
-  background-image: url(src/bluehaze.jpg);
+  background-image: url(./bluehaze.jpg);
   border-style: solid;
   color: #5a6275;
   margin-top: 20px;
