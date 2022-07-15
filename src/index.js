@@ -50,9 +50,7 @@ date.innerHTML = `${hours}:${minutes}, ${day}, ${dayNumber} ${month}--${year}`;
 //City Searches and innerHTML Information
 
 function showTheWeather(response) {
-  document.querySelector(
-    "#city"
-  ).innerHTML = `In ${response.data.name}: The Weather will be:`;
+  document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#tempvalue").innerHTML = Math.round(
     response.data.main.temp
   );
