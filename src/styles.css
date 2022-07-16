@@ -1,4 +1,5 @@
 body {
+  margin-top: 50px;
   font-family: "Radio Canada", sans-serif;
 }
 
@@ -71,6 +72,10 @@ footer {
   padding-bottom: 25px;
 }
 
+.icon {
+  size: 50px;
+}
+
 .day-date {
   color: #006ec5;
   font-size: 20px;
@@ -79,12 +84,15 @@ footer {
 }
 
 .temp {
+  position: relative;
   color: #006ec5;
   font-weight: 500;
   font-size: 50px;
 }
 
 .tinyTemp {
+  position: relative;
+  padding-left: 0%;
   color: #006ec5;
   font-weight: 300;
   font-size: 30px;

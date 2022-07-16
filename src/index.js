@@ -50,16 +50,21 @@ date.innerHTML = `${hours}:${minutes}, ${day}, ${dayNumber} ${month}--${year}`;
 //City Searches and innerHTML Information
 
 function showTheWeather(response) {
+  let iconElement = document.querySelector("icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#tempvalue").innerHTML = Math.round(
     response.data.main.temp
   );
-
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+  );
+
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
 
