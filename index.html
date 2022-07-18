@@ -34,8 +34,9 @@
     We're here for you! 🌡
 </h1>
 
-
-
+<span id="date" class="day-date"> </span>
+<br/>
+<br/>
 
 <form id="searchform">
   <div class="searchBar">
@@ -52,26 +53,31 @@
     <button id="currenttempbutton" type="submit" class="btn btn-primary col-2 shadow-sm">Your location:</button>
 
 
+
+
 <br />
 <div class="innerBox">
 <h2 id="city">The Weather will be:</h2>
 
 
-<ul class="firstList row">
-<li class="list1 col-5"><img src="http://openweathermap.org/img/wn/09n@2x.png" alt="clear" id="icon"/></li>
+<div class="firstList row">
+<div class="list1 col-4"><img src="http://openweathermap.org/img/wn/09n@2x.png" alt="clear" id="icon"/></div>
 
-<li id="date" class="list2 col-2 day-date">  <br /> </li>
 
-<li id="tempvalue" class="list3 col-1 temp" > 
-    <li class="tinyTemp col-1">°C/</li>
-        <li class="degrees-f col-1">°F</li>
 
-<ul class="list4 col-1 weather-facts">
-    <li>Description: <span id="description"> </span></li>
-    <li>Humidity: <span id="humidity"> </span>%</li>
-    <li>Wind: <span id="wind"> </span> m/s</li>
-</ul>
-</ul>
+<div id="tempvalue" class="list3 col-4 temp">
+<span class="degrees-c col"> °C/</span>
+    <span class="degrees-f col"> °F</span>
+</div>
+
+
+
+<div class="list4 col-4 weather-facts">
+    <div>Description: <span id="description"> </span></div>
+    <div>Humidity: <span id="humidity"> </span>%</div>
+    <div>Wind: <span id="wind"> </span> m/s</div>
+</div>
+
 
 
 

@@ -64,19 +64,12 @@ footer {
 
 /* first list elements*/
 
-.rain-moon {
-  color: #5a6275;
-  font-size: 200px;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
 .icon {
   size: 50px;
 }
 
 .day-date {
+  text-align: center;
   color: #006ec5;
   font-size: 20px;
   font-family: "Radio Canada", sans-serif;
@@ -84,14 +77,13 @@ footer {
 }
 
 .temp {
-  position: relative;
   color: #006ec5;
   font-weight: 500;
   font-size: 50px;
 }
 
-.tinyTemp {
-  position: relative;
+.degrees-c {
+  
   padding-left: 0%;
   color: #006ec5;
   font-weight: 300;
