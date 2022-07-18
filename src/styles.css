@@ -64,16 +64,16 @@ footer {
 
 /* first list elements*/
 
-.icon {
-  size: 50px;
-}
-
 .day-date {
   text-align: center;
   color: #006ec5;
   font-size: 20px;
   font-family: "Radio Canada", sans-serif;
   padding-top: 25px;
+}
+
+.icon {
+  size: 50px;
 }
 
 .temp {
@@ -83,8 +83,6 @@ footer {
 }
 
 .degrees-c {
-  
-  padding-left: 0%;
   color: #006ec5;
   font-weight: 300;
   font-size: 30px;
@@ -98,7 +96,7 @@ footer {
 }
 
 .weather-facts {
-  list-style: none;
+  padding-bottom: 20px;
   color: #006ec5;
   font-family: "Radio Canada", sans-serif;
   font-size: 20px;
@@ -108,6 +106,8 @@ footer {
 /* Second list elements*/
 
 .secondList {
+  margin-left: 1px;
+  margin-right: 5px;
   background-color: white;
   list-style: none;
   border-style: solid;
