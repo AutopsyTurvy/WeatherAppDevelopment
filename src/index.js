@@ -59,7 +59,7 @@ function showTheWeather(response) {
   );
 
   //weather facts collection
-
+  let tempElement = document.querySelector("#temperature");
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -118,8 +118,8 @@ currentTempButton.addEventListener("click", getCurrentLocation);
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let fahrenheitTemperature = (14 * 9) / 5 + 32;
-  let tempElement = document.querySelector("#");
-  tempvalue.innerHTML = fahrenheitTemperature;
+  let tempElement = document.querySelector("#temperature");
+  tempElement.innerHTML = fahrenheitTemperature;
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
