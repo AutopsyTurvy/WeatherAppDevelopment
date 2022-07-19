@@ -65,12 +65,7 @@ function showTheWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
-
-    let tempElement = document.querySelector("#tempvalue");
-
   );
-
-  
 
   iconElement.setAttribute(
     "src",
