@@ -47,30 +47,38 @@ console.log(date);
 
 date.innerHTML = `${hours}:${minutes}, ${day}, ${dayNumber} ${month}--${year}`;
 
-
-
-
 //City Searches and innerHTML Information
 
 function showTheWeather(response) {
   let iconElement = document.querySelector("#icon");
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector(
+    "#city"
+  ).innerHTML = `In ${response.data.name}- The weather will be: `;
   document.querySelector("#tempvalue").innerHTML = Math.round(
     response.data.main.temp
   );
+
+  //weather facts collection
 
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+
+    let tempElement = document.querySelector("#tempvalue");
+
   );
+
   
+
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+
+//city API
 
 function searchCity(city) {
   let apiKey = "2054b4e7093f717fe48ca5b5d67c0e82";
@@ -94,9 +102,6 @@ form.addEventListener("submit", handleSubmit);
 
 searchCity("Copenhagen");
 
-
-
-
 //geolocation code
 
 function searchLocation(position) {
@@ -112,3 +117,15 @@ function getCurrentLocation(event) {
 
 let currentTempButton = document.querySelector("#currenttempbutton");
 currentTempButton.addEventListener("click", getCurrentLocation);
+
+//fahrenheit conversion
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let tempElement = document.querySelector("#");
+  tempvalue.innerHTML = fahrenheitTemperature;
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
