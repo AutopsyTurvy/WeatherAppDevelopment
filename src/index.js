@@ -58,8 +58,10 @@ function showTheWeather(response) {
     response.data.main.temp
   );
 
+  celsiusTemperature = response.data.main.temp;
+
   //weather facts collection
-  let tempElement = document.querySelector("#temperature");
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -95,8 +97,6 @@ function handleSubmit(event) {
 let form = document.querySelector("#searchform");
 form.addEventListener("submit", handleSubmit);
 
-searchCity("Copenhagen");
-
 //geolocation code
 
 function searchLocation(position) {
@@ -117,10 +117,14 @@ currentTempButton.addEventListener("click", getCurrentLocation);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (14 * 9) / 5 + 32;
-  let tempElement = document.querySelector("#temperature");
-  tempElement.innerHTML = fahrenheitTemperature;
+  let tempElement = document.querySelector("#tempvalue");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  tempElement.innerHTML = Math.round(fahrenheitTemperature);
 }
+
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+searchCity("Copenhagen");
