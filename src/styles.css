@@ -82,17 +82,26 @@ footer {
   font-size: 50px;
 }
 
-.degrees-c {
-  color: #006ec5;
-  font-weight: 300;
+.temp .active {
   font-size: 30px;
+  color: #006ec5;
+  cursor: default;
+  text-decoration: none;
 }
 
-.degrees-f {
-  color: #006ec5;
-  font-weight: 300;
+.temp .active:hover {
+  text-decoration: none;
+}
+
+.temp .inactive {
   font-size: 30px;
-  padding: 0px;
+  color: #006ec5;
+  cursor: default;
+  text-decoration: none;
+}
+
+.temp .inactive:hover {
+  text-decoration: none;
 }
 
 .weather-facts {
