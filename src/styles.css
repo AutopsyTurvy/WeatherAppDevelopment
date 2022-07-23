@@ -76,6 +76,10 @@ footer {
   size: 50px;
 }
 
+.tempSymbolStyle {
+  font-size: 30px;
+}
+
 .temp {
   color: #006ec5;
   font-weight: 500;
@@ -91,17 +95,7 @@ footer {
 
 .temp .active:hover {
   text-decoration: none;
-}
-
-.temp .inactive {
   font-size: 30px;
-  color: #006ec5;
-  cursor: default;
-  text-decoration: none;
-}
-
-.temp .inactive:hover {
-  text-decoration: none;
 }
 
 .weather-facts {
