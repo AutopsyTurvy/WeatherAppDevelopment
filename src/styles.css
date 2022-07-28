@@ -118,15 +118,9 @@ footer {
   padding: 20px;
 }
 
-.mon,
-.tues,
-.wed,
-.thurs,
-.fri,
-.sat,
-.sun {
+.weather-forecast {
   text-align: center;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .goodbye {
