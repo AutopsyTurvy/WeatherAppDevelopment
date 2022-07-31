@@ -123,6 +123,10 @@ footer {
   font-size: 18px;
 }
 
+.weather-forecast-temperature-max {
+  font-weight: 600;
+}
+
 .goodbye {
   text-align: center;
   font-size: 20px;
